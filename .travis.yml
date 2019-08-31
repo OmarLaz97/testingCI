@@ -4,4 +4,4 @@ services:
 before_install:
         - docker build -t omarlaz/devbuild -f Dockerfile.dev .
 script:
-        - docker run omarlaz/devbuild npm run test -- -- coverage
+        - docker run omarlaz/devbuild npm run test -- --coverage
